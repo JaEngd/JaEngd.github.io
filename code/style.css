@@ -1,0 +1,139 @@
+:root{
+  --overlay-color: rgb(77, 76, 76);
+  }
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Apex New;
+}
+
+.showcase{
+  position: absolute;
+  right: 0;
+  width: 100%;
+  min-height: 100vh;
+  padding: 100px;
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  background: #111;
+  color: #fff;
+  z-index: 2;
+}
+
+.showcase header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 40px 100px;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  position: absolute;
+  left: 10%;
+}
+
+/*/ Bakgrundsvideo /*/
+.showcase video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.8;
+}
+
+/*/ Filter /*/
+.overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--overlay-color);
+  mix-blend-mode: overlay;
+}
+
+/*/ Text /*/
+.text{
+  position: relative;
+  text-align: center;
+  z-index: 10;
+  align-items: center;
+}
+
+.text h2 {
+  font-size: 3em;
+  font-weight: 800;
+  line-height: 0.5em;
+  text-align: center;
+  position: relative;
+}
+
+.text p {
+  font-size: 1.1em;
+  margin: 30px 0;
+  font-weight: 400;
+  line-height: 1.2em;
+  text-align: center;
+  position: relative;
+}
+
+/*/ Buttons /*/
+.text a{
+  font-weight: bold;
+  position: relative;
+  text-align: center;
+  line-height: 2.5em;
+  font-size: 18px;
+  color: #fff;
+  margin: 10px;
+  padding: 7px 22px;
+  text-decoration: none;
+  border: 1px solid coral;
+  border-radius: 25px;
+}
+
+
+.text a:hover {
+  background: coral;
+  transition: .2s;
+}
+
+@media(max-width: 798px) {
+  .showcase, 
+  .showcase header {
+    padding: 40px;
+  }
+
+  .text h2 {
+    font-size: 3em;
+  }
+
+  text h3 {
+    font-size: 2em;
+  }
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
